@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mediumPurple"
+        tools:ignore="MissingConstraints"
+        />
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_view_title"
+        android:textSize="24sp"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <LinearLayout
+        android:id="@+id/dataMainLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8pt"
+        android:layout_marginRight="8pt"
+        android:orientation="horizontal"
+        android:background="@color/fon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTV"
+        app:layout_constraintVertical_bias="0.1">
+
+        <LinearLayout
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8pt"
+            android:layout_marginRight="8pt"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTV"
+            app:layout_constraintVertical_bias="0.1">
+
+
+            <TextView
+                android:id="@+id/nameFieldTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8pt"
+                style="@style/MaterialAlertDialog.Material3.Title.Text"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:layout_weight="1"
+
+                android:text="@string/text_view_name" />
+
+            <TextView
+                android:id="@+id/familyFieldTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8pt"
+                android:layout_weight="1"
+                android:textColor="@color/red"
+                style="@style/MaterialAlertDialog.Material3.Title.Text"
+                android:textStyle="bold"
+                android:text="@string/text_view_family" />
+
+            <TextView
+                android:id="@+id/adresFieldTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8pt"
+                android:layout_weight="1"
+                android:textColor="@color/red"
+                style="@style/MaterialAlertDialog.Material3.Title.Text"
+                android:textStyle="bold"
+                android:text="@string/text_view_adres" />
+
+            <TextView
+                android:id="@+id/phoneFieldTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8pt"
+                android:layout_weight="1"
+                android:textColor="@color/red"
+                style="@style/MaterialAlertDialog.Material3.Title.Text"
+                android:textStyle="bold"
+                android:text="@string/text_view_phone" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8pt"
+            android:layout_marginRight="8pt"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleTV"
+            app:layout_constraintVertical_bias="0.1">
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8pt"
+                android:layout_weight="1"
+                style="@style/MaterialAlertDialog.Material3.Title.Text"
+                android:textStyle="italic"
+                android:text="@string/text_view_name" />
+
+            <TextView
+                android:id="@+id/familyTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8pt"
+                android:layout_weight="1"
+                style="@style/MaterialAlertDialog.Material3.Title.Text"
+                android:textStyle="italic"
+                android:text="@string/text_view_family" />
+
+            <TextView
+                android:id="@+id/adresTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8pt"
+                android:layout_weight="1"
+                style="@style/MaterialAlertDialog.Material3.Title.Text"
+                android:textStyle="italic"
+                android:text="@string/text_view_adres" />
+
+            <TextView
+                android:id="@+id/phoneTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8pt"
+                android:layout_weight="1"
+                style="@style/MaterialAlertDialog.Material3.Title.Text"
+                android:textStyle="italic"
+                android:text="@string/text_view_phone" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonBackBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/button_back"
+        android:textSize="22sp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dataMainLL"
+        app:layout_constraintVertical_bias="0.1"/>
+
+    <ImageView
+        android:id="@+id/imageBodyII"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/adresbook3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBackBTN" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
