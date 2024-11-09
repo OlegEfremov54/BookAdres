@@ -9,7 +9,10 @@ class Person(val name: String?, val family: String?, val adres: String?, val pho
         parcel.readString(),
         parcel.readString(),
         parcel.readString()
-    ) {
+    )
+
+    override fun toString(): String {
+        return "$name $family"
     }
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
@@ -31,9 +34,5 @@ class Person(val name: String?, val family: String?, val adres: String?, val pho
         override fun newArray(size: Int): Array<Person?> {
             return arrayOfNulls(size)
         }
-    }
-
-    override fun toString(): String {
-        return "$name $family"
     }
 }

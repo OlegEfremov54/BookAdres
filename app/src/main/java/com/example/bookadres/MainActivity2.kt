@@ -33,6 +33,7 @@ class MainActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         toolbarSec = findViewById(R.id.toolbarSec)
         setSupportActionBar(toolbarSec)
         title = " Адресная книга"
@@ -60,8 +61,6 @@ class MainActivity2 : AppCompatActivity() {
             finish()
         }
     }
-
-
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main,menu)
